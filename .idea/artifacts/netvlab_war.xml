@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="netvlab:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="netvlab.war">
+      <element id="artifact" artifact-name="netvlab:war exploded" />
+    </root>
+  </artifact>
+</component>

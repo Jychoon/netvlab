@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!-- 修改常量管理struts 中的action的工程，需引入 spring和struts的整合包才有该常量 -->
+    <constant name="struts.objectFactory" value="spring" />
+    <!-- 动态方法调用 -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <!-- Action-->
+    <!-- netvlabAction-->
+    <package name="netvlab" extends="struts-default,json-default" namespace="/">
+        <action name="authentication" class="authenticationAction" method="authentication">
+            <result name="success">layout.jsp</result>
+            <result name="error">login.html</result>
+            <!--<allowed-methods>authentication</allowed-methods>-->
+        </action>
+        <action name="logout" class="logoutAction" method="logout">
+            <result name="success">login.html</result>
+            <result name="error">login.html</result>
+        </action>
+        <action name="register" class="registerAction" method="register">
+            <result name="success" type="json">
+                <param name="root">returnJsonData</param>
+            </result>
+        </action>
+    </package>
+    <package name="netvlab_ajax" extends="struts-default,json-default" namespace="/ajax">
+    <action name="topo_*" class="{1}Action" method="{1}">
+        <result name="success" type="json">
+            <param name="root">returnJsonData</param>
+        </result>
+        <allowed-methods>submit,release,getConsole,getServerIp</allowed-methods>
+    </action>
+</package>
+</struts>

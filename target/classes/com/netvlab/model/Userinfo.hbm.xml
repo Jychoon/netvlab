@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.netvlab.model.Userinfo" table="userinfo" schema="vnetwork">
+        <id name="id" column="id"/>
+        <property name="studentId" column="studentId"/>
+        <property name="name" column="name"/>
+        <property name="sex" column="sex"/>
+        <property name="school" column="school"/>
+        <property name="classes" column="classes"/>
+        <property name="password" column="password"/>
+    </class>
+</hibernate-mapping>

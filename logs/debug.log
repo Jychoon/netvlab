@@ -1,0 +1,622 @@
+2019-05-27 20:19:16  [ main:0 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20003/v3 -> /auth/tokens
+2019-05-27 20:19:18  [ main:2148 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 20:19:18  [ main:2158 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 20:19:18  [ main:2158 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 20:19:18  [ main:2168 ] - [ DEBUG ]  Connection leased: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:19:18  [ main:2168 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20003
+2019-05-27 20:19:18  [ main:2168 ] - [ DEBUG ]  Connecting to /202.197.66.217:20003
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  Connection established 192.168.1.160:7527<->202.197.66.217:20003
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  Executing request POST /v3/auth/tokens HTTP/1.1
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> POST /v3/auth/tokens HTTP/1.1
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> Content-Type: application/json
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> OS4J-Auth-Command: Tokens
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> Content-Length: 431
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> Host: 202.197.66.217:20003
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "POST /v3/auth/tokens HTTP/1.1[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "OS4J-Auth-Command: Tokens[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Length: 431[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "Host: 202.197.66.217:20003[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "{[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "  "auth" : {[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "    "identity" : {[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "      "password" : {[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "        "user" : {[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "netvlab",[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "          "domain" : {[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "            "name" : "Default"[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "          },[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "          "password" : "openstack"[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "      },[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "      "methods" : [ "password" ][\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "    },[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "    "scope" : {[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "      "project" : {[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "        "name" : "netvlab",[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "        "domain" : {[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "Default"[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "      }[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "    }[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "  }[\r][\n]"
+2019-05-27 20:19:18  [ main:2178 ] - [ DEBUG ]  http-outgoing-0 >> "}"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "Date: Mon, 27 May 2019 12:19:19 GMT[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "X-Subject-Token: gAAAAABc69XI9tzShPeZuVdNtL4hZvkUA_2YWtyyFMOmzISdg0pGRLET6VYL4za5wmE4ApkS01etSTs_RVs9Mt_cO8UrqxCtXDud2yfrf1QdCtC42O0sWXwmWL0F2pW7GrxsH7Bi0JAHRPLVKYTafyhHnUga3GelGWM3-AfJZhZQ0nms8eoGaVs[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "Vary: X-Auth-Token[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "X-Distribution: Ubuntu[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "x-openstack-request-id: req-e33c5fc5-9aec-4e49-a475-3f8058254594[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "Content-Length: 3313[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2019-05-27 20:19:18  [ main:2518 ] - [ DEBUG ]  http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << "{"token": {"is_domain": false, "methods": ["password"], "roles": [{"id": "6aa1758e98e54b1299dbaa85536f127c", "name": "user"}], "expires_at": "2019-05-27T13:19:20.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "85627a7c334549caa571bef2a5333889", "name": "netvlab"}, "catalog": [{"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20003/v3/", "region": "RegionOne", "interface": "public", "id": "2e2eac5ec9c947aa884d4399daa11119"}, {"region_id": "RegionOne", "url": "http://controller:5000/v3/", "region": "RegionOne", "interface": "internal", "id": "a5dd3354207d4e3689f12eb225dc041c"}, {"region_id": "RegionOne", "url": "http://controller:35357/v3/", "region": "RegionOne", "interface": "admin", "id": "e4a65284ee504c95b757a6f436b59553"}], "type": "identity", "id": "46605630a5694512a6420f92daac95c2", "name": "keystone"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "internal", "id": "4fd9b9bf479947bbb8732fafac0eaf61"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "admin", "id": "72e32928e4434b899f920853daa0ceba"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "public", "id": "a9b34ec867df463cbd8c280f6e481e89"}], "type": "placement", "id": "53f047b0c1cc4ba6932bd823354c7aaf", "name": "placement"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20006/v2.1", "region": "RegionOne", "interface": "public", "id": "9df5a8a9b6294d22a591eab5a197dcc9"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "admin", "id": "ab86af7afba443058662758e223d13db"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "internal", "id": "d8799c0c9cfc46d6a59c1d1d352f2040"}], "type": "compute", "id": "7837289623b146c3991bf7573dddbe79", "name": "nova"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20004", "region": "RegionOne", "interface": "public", "id": "44798afc1ecc41f7b5920b1ba31959c3"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "admin", "id": "62ab43fd15ed495ab16dae901bc240f2"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "internal", "id": "a73cd978300644649efea76ffb125116"}], "type": "network", "id": "a0033f2d8a434a7c9f2005f81e4ba74c", "name": "neutron"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "admin", "id": "3a9c6d1a8f2a4af9b077af5a211ed424"}, {"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "internal", "id": "afd5c9dd101d4ced8f3d775ea2172f25"}, {"region_id": "RegionOne", "url": "http://202.197.66.217:20005", "region": "RegionOne", "interface": "public", "id": "da42454c867e4e018348ad47c4bca094"}], "type": "image", "id": "c5a99868a7df4be1a54dd1aa4ec48255", "name": "glance"}], "user": {"password_expires_at": null, "domain": {"id": "default", "name": "Default"}, "id": "2e2cc1f903884607a31e0a07834c20d9", "name": "netvlab"}, "audit_ids": ["uiZshs3_R7O91JoOEXQjEw"], "issued_at": "2019-05-27T12:19:20.000000Z"}}"
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 201 Created
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << Date: Mon, 27 May 2019 12:19:19 GMT
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << Server: Apache/2.4.18 (Ubuntu)
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << X-Subject-Token: gAAAAABc69XI9tzShPeZuVdNtL4hZvkUA_2YWtyyFMOmzISdg0pGRLET6VYL4za5wmE4ApkS01etSTs_RVs9Mt_cO8UrqxCtXDud2yfrf1QdCtC42O0sWXwmWL0F2pW7GrxsH7Bi0JAHRPLVKYTafyhHnUga3GelGWM3-AfJZhZQ0nms8eoGaVs
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << Vary: X-Auth-Token
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << X-Distribution: Ubuntu
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << x-openstack-request-id: req-e33c5fc5-9aec-4e49-a475-3f8058254594
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << Content-Length: 3313
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << Keep-Alive: timeout=5, max=100
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << Connection: Keep-Alive
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: application/json
+2019-05-27 20:19:18  [ main:2528 ] - [ DEBUG ]  Connection can be kept alive for 5000 MILLISECONDS
+2019-05-27 20:19:18  [ main:2548 ] - [ DEBUG ]  Connection [id: 0][route: {}->http://202.197.66.217:20003] can be kept alive for 5.0 seconds
+2019-05-27 20:19:18  [ main:2548 ] - [ DEBUG ]  Connection released: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:19:18  [ Finalizer:2678 ] - [ DEBUG ]  Connection manager is shutting down
+2019-05-27 20:19:18  [ Finalizer:2678 ] - [ DEBUG ]  http-outgoing-0: Close connection
+2019-05-27 20:19:18  [ Finalizer:2678 ] - [ DEBUG ]  Connection manager shut down
+2019-05-27 20:19:19  [ main:2788 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20004/v2.0 -> /routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6/remove_router_interface
+2019-05-27 20:19:19  [ main:2788 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 20:19:19  [ main:2788 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 20:19:19  [ main:2788 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 20:19:19  [ main:2788 ] - [ DEBUG ]  Connection leased: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:19:19  [ main:2788 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20004
+2019-05-27 20:19:19  [ main:2788 ] - [ DEBUG ]  Connecting to /202.197.66.217:20004
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  Connection established 192.168.1.160:7528<->202.197.66.217:20004
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  Executing request PUT /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6/remove_router_interface HTTP/1.1
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> PUT /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6/remove_router_interface HTTP/1.1
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> Content-Type: application/json
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> User-Agent: OpenStack4j / OpenStack Client
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> X-Auth-Token: gAAAAABc69XI9tzShPeZuVdNtL4hZvkUA_2YWtyyFMOmzISdg0pGRLET6VYL4za5wmE4ApkS01etSTs_RVs9Mt_cO8UrqxCtXDud2yfrf1QdCtC42O0sWXwmWL0F2pW7GrxsH7Bi0JAHRPLVKYTafyhHnUga3GelGWM3-AfJZhZQ0nms8eoGaVs
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> Content-Length: 60
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> Host: 202.197.66.217:20004
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> Connection: Keep-Alive
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "PUT /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6/remove_router_interface HTTP/1.1[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "Content-Type: application/json[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "User-Agent: OpenStack4j / OpenStack Client[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "X-Auth-Token: gAAAAABc69XI9tzShPeZuVdNtL4hZvkUA_2YWtyyFMOmzISdg0pGRLET6VYL4za5wmE4ApkS01etSTs_RVs9Mt_cO8UrqxCtXDud2yfrf1QdCtC42O0sWXwmWL0F2pW7GrxsH7Bi0JAHRPLVKYTafyhHnUga3GelGWM3-AfJZhZQ0nms8eoGaVs[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "Content-Length: 60[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "Host: 202.197.66.217:20004[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "{[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "  "subnet_id" : "caa988c4-d81d-4a55-97ca-acefb66066f6"[\r][\n]"
+2019-05-27 20:19:19  [ main:2798 ] - [ DEBUG ]  http-outgoing-1 >> "}"
+2019-05-27 20:19:19  [ main:3538 ] - [ DEBUG ]  http-outgoing-1 << "HTTP/1.1 404 Not Found[\r][\n]"
+2019-05-27 20:19:19  [ main:3538 ] - [ DEBUG ]  http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-05-27 20:19:19  [ main:3538 ] - [ DEBUG ]  http-outgoing-1 << "Content-Length: 198[\r][\n]"
+2019-05-27 20:19:19  [ main:3538 ] - [ DEBUG ]  http-outgoing-1 << "X-Openstack-Request-Id: req-900c8a59-4fc1-49c5-b1c0-72fc853dfcd2[\r][\n]"
+2019-05-27 20:19:19  [ main:3538 ] - [ DEBUG ]  http-outgoing-1 << "Date: Mon, 27 May 2019 12:19:21 GMT[\r][\n]"
+2019-05-27 20:19:19  [ main:3538 ] - [ DEBUG ]  http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-05-27 20:19:19  [ main:3538 ] - [ DEBUG ]  http-outgoing-1 << "[\r][\n]"
+2019-05-27 20:19:19  [ main:3538 ] - [ DEBUG ]  http-outgoing-1 << "{"NeutronError": {"message": "Router 34d62506-7122-42d6-ac1b-c1ea7e02b9e6 has no interface on subnet caa988c4-d81d-4a55-97ca-acefb66066f6", "type": "RouterInterfaceNotFoundForSubnet", "detail": ""}}"
+2019-05-27 20:19:19  [ main:3548 ] - [ DEBUG ]  http-outgoing-1 << HTTP/1.1 404 Not Found
+2019-05-27 20:19:19  [ main:3548 ] - [ DEBUG ]  http-outgoing-1 << Content-Type: application/json
+2019-05-27 20:19:19  [ main:3548 ] - [ DEBUG ]  http-outgoing-1 << Content-Length: 198
+2019-05-27 20:19:19  [ main:3548 ] - [ DEBUG ]  http-outgoing-1 << X-Openstack-Request-Id: req-900c8a59-4fc1-49c5-b1c0-72fc853dfcd2
+2019-05-27 20:19:19  [ main:3548 ] - [ DEBUG ]  http-outgoing-1 << Date: Mon, 27 May 2019 12:19:21 GMT
+2019-05-27 20:19:19  [ main:3548 ] - [ DEBUG ]  http-outgoing-1 << Connection: keep-alive
+2019-05-27 20:19:19  [ main:3548 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2019-05-27 20:19:19  [ main:3568 ] - [ DEBUG ]  Connection [id: 1][route: {}->http://202.197.66.217:20004] can be kept alive indefinitely
+2019-05-27 20:19:19  [ main:3568 ] - [ DEBUG ]  Connection released: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:26:48  [ main:0 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20003/v3 -> /auth/tokens
+2019-05-27 20:26:49  [ main:1310 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 20:26:49  [ main:1330 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 20:26:49  [ main:1330 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  Connection leased: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20003
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  Connecting to /202.197.66.217:20003
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  Connection established 192.168.1.160:8275<->202.197.66.217:20003
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  Executing request POST /v3/auth/tokens HTTP/1.1
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> POST /v3/auth/tokens HTTP/1.1
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> Content-Type: application/json
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> OS4J-Auth-Command: Tokens
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> Content-Length: 431
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> Host: 202.197.66.217:20003
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "POST /v3/auth/tokens HTTP/1.1[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "OS4J-Auth-Command: Tokens[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Length: 431[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "Host: 202.197.66.217:20003[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "{[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "  "auth" : {[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "    "identity" : {[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "      "password" : {[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "        "user" : {[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "netvlab",[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "          "domain" : {[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "            "name" : "Default"[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "          },[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "          "password" : "openstack"[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "      },[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "      "methods" : [ "password" ][\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "    },[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "    "scope" : {[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "      "project" : {[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "        "name" : "netvlab",[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "        "domain" : {[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "Default"[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "      }[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "    }[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "  }[\r][\n]"
+2019-05-27 20:26:49  [ main:1340 ] - [ DEBUG ]  http-outgoing-0 >> "}"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "Date: Mon, 27 May 2019 12:26:50 GMT[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "X-Subject-Token: gAAAAABc69eL5UfPB4hJ_o7Erg0N2rN_x-BpxmLkmaJ_2bhL-YynWyRNpT8QSqLFOkEeNYT1sR-wYxyr-gbGqwYbBPEQgdzfoIXEYiBO-MHCRPNu06uNaOFktqMo7kP1ou6g8fWYb5DudYKo_SR1Ez3CSYF-ZujtGa8StDOzNKGTSAXpxt6RiBw[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "Vary: X-Auth-Token[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "X-Distribution: Ubuntu[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "x-openstack-request-id: req-06b345c8-5280-4e8e-a873-944247873890[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "Content-Length: 3313[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+2019-05-27 20:26:49  [ main:1720 ] - [ DEBUG ]  http-outgoing-0 << "{"token": {"is_domain": false, "methods": ["password"], "roles": [{"id": "6aa1758e98e54b1299dbaa85536f127c", "name": "user"}], "expires_at": "2019-05-27T13:26:51.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "85627a7c334549caa571bef2a5333889", "name": "netvlab"}, "catalog": [{"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20003/v3/", "region": "RegionOne", "interface": "public", "id": "2e2eac5ec9c947aa884d4399daa11119"}, {"region_id": "RegionOne", "url": "http://controller:5000/v3/", "region": "RegionOne", "interface": "internal", "id": "a5dd3354207d4e3689f12eb225dc041c"}, {"region_id": "RegionOne", "url": "http://controller:35357/v3/", "region": "RegionOne", "interface": "admin", "id": "e4a65284ee504c95b757a6f436b59553"}], "type": "identity", "id": "46605630a5694512a6420f92daac95c2", "name": "keystone"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "internal", "id": "4fd9b9bf479947bbb8732fafac0eaf61"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "admin", "id": "72e32928e4434b899f920853daa0ceba"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "public", "id": "a9b34ec867df463cbd8c280f6e481e89"}], "type": "placement", "id": "53f047b0c1cc4ba6932bd823354c7aaf", "name": "placement"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20006/v2.1", "region": "RegionOne", "interface": "public", "id": "9df5a8a9b6294d22a591eab5a197dcc9"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "admin", "id": "ab86af7afba443058662758e223d13db"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "internal", "id": "d8799c0c9cfc46d6a59c1d1d352f2040"}], "type": "compute", "id": "7837289623b146c3991bf7573dddbe79", "name": "nova"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20004", "region": "RegionOne", "interface": "public", "id": "44798afc1ecc41f7b5920b1ba31959c3"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "admin", "id": "62ab43fd15ed495ab16dae901bc240f2"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "internal", "id": "a73cd978300644649efea76ffb125116"}], "type": "network", "id": "a0033f2d8a434a7c9f2005f81e4ba74c", "name": "neutron"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "admin", "id": "3a9c6d1a8f2a4af9b077af5a211ed424"}, {"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "internal", "id": "afd5c9dd101d4ced8f3d775ea2172f25"}, {"region_id": "RegionOne", "url": "http://202.197.66.217:20005", "region": "RegionOne", "interface": "public", "id": "da42454c867e4e018348ad47c4bca094"}], "type": "image", "id": "c5a99868a7df4be1a54dd1aa4ec48255", "name": "glance"}], "user": {"password_expires_at": null, "domain": {"id": "default", "name": "Default"}, "id": "2e2cc1f903884607a31e0a07834c20d9", "name": "netvlab"}, "audit_ids": ["ChyYCHcrQL26DJ55e_rMFg"], "issued_at": "2019-05-27T12:26:51.000000Z"}}"
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 201 Created
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << Date: Mon, 27 May 2019 12:26:50 GMT
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << Server: Apache/2.4.18 (Ubuntu)
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << X-Subject-Token: gAAAAABc69eL5UfPB4hJ_o7Erg0N2rN_x-BpxmLkmaJ_2bhL-YynWyRNpT8QSqLFOkEeNYT1sR-wYxyr-gbGqwYbBPEQgdzfoIXEYiBO-MHCRPNu06uNaOFktqMo7kP1ou6g8fWYb5DudYKo_SR1Ez3CSYF-ZujtGa8StDOzNKGTSAXpxt6RiBw
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << Vary: X-Auth-Token
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << X-Distribution: Ubuntu
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << x-openstack-request-id: req-06b345c8-5280-4e8e-a873-944247873890
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << Content-Length: 3313
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << Keep-Alive: timeout=5, max=100
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << Connection: Keep-Alive
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: application/json
+2019-05-27 20:26:49  [ main:1730 ] - [ DEBUG ]  Connection can be kept alive for 5000 MILLISECONDS
+2019-05-27 20:26:49  [ main:1740 ] - [ DEBUG ]  Connection [id: 0][route: {}->http://202.197.66.217:20003] can be kept alive for 5.0 seconds
+2019-05-27 20:26:49  [ main:1740 ] - [ DEBUG ]  Connection released: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:26:49  [ Finalizer:1820 ] - [ DEBUG ]  Connection manager is shutting down
+2019-05-27 20:26:49  [ Finalizer:1820 ] - [ DEBUG ]  http-outgoing-0: Close connection
+2019-05-27 20:26:49  [ Finalizer:1820 ] - [ DEBUG ]  Connection manager shut down
+2019-05-27 20:26:50  [ main:1880 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20004/v2.0 -> /routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Connection leased: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20004
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Connecting to /202.197.66.217:20004
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Connection established 192.168.1.160:8278<->202.197.66.217:20004
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Executing request GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> User-Agent: OpenStack4j / OpenStack Client
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> X-Auth-Token: gAAAAABc69eL5UfPB4hJ_o7Erg0N2rN_x-BpxmLkmaJ_2bhL-YynWyRNpT8QSqLFOkEeNYT1sR-wYxyr-gbGqwYbBPEQgdzfoIXEYiBO-MHCRPNu06uNaOFktqMo7kP1ou6g8fWYb5DudYKo_SR1Ez3CSYF-ZujtGa8StDOzNKGTSAXpxt6RiBw
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> Host: 202.197.66.217:20004
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> Connection: Keep-Alive
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> "GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1[\r][\n]"
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> "User-Agent: OpenStack4j / OpenStack Client[\r][\n]"
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> "X-Auth-Token: gAAAAABc69eL5UfPB4hJ_o7Erg0N2rN_x-BpxmLkmaJ_2bhL-YynWyRNpT8QSqLFOkEeNYT1sR-wYxyr-gbGqwYbBPEQgdzfoIXEYiBO-MHCRPNu06uNaOFktqMo7kP1ou6g8fWYb5DudYKo_SR1Ez3CSYF-ZujtGa8StDOzNKGTSAXpxt6RiBw[\r][\n]"
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> "Host: 202.197.66.217:20004[\r][\n]"
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 20:26:50  [ main:1890 ] - [ DEBUG ]  http-outgoing-1 >> "[\r][\n]"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << "Content-Length: 657[\r][\n]"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << "X-Openstack-Request-Id: req-0d7b35b1-663d-4689-b611-ed451d0c55b0[\r][\n]"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << "Date: Mon, 27 May 2019 12:26:51 GMT[\r][\n]"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << "[\r][\n]"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << "{"router": {"status": "ACTIVE", "external_gateway_info": {"network_id": "1db6202d-a879-4050-9583-b3a8d3b9bcf4", "enable_snat": true, "external_fixed_ips": [{"subnet_id": "1cfce092-5ee7-4a84-a48c-a0e7c037eb18", "ip_address": "192.168.1.232"}]}, "availability_zone_hints": [], "availability_zones": ["nova"], "description": "", "tags": [], "tenant_id": "85627a7c334549caa571bef2a5333889", "created_at": "2019-05-20T12:33:19Z", "admin_state_up": true, "updated_at": "2019-05-27T12:15:04Z", "flavor_id": null, "revision_number": 10, "routes": [], "project_id": "85627a7c334549caa571bef2a5333889", "id": "34d62506-7122-42d6-ac1b-c1ea7e02b9e6", "name": "ROUTER"}}"
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << HTTP/1.1 200 OK
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << Content-Type: application/json
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << Content-Length: 657
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << X-Openstack-Request-Id: req-0d7b35b1-663d-4689-b611-ed451d0c55b0
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << Date: Mon, 27 May 2019 12:26:51 GMT
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  http-outgoing-1 << Connection: keep-alive
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  Connection [id: 1][route: {}->http://202.197.66.217:20004] can be kept alive indefinitely
+2019-05-27 20:26:50  [ main:2090 ] - [ DEBUG ]  Connection released: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:29:11  [ main:0 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20003/v3 -> /auth/tokens
+2019-05-27 20:29:12  [ main:1145 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 20:29:12  [ main:1161 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 20:29:12  [ main:1163 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 20:29:12  [ main:1173 ] - [ DEBUG ]  Connection leased: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:29:12  [ main:1174 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20003
+2019-05-27 20:29:12  [ main:1175 ] - [ DEBUG ]  Connecting to /202.197.66.217:20003
+2019-05-27 20:29:12  [ main:1176 ] - [ DEBUG ]  Connection established 192.168.1.160:8533<->202.197.66.217:20003
+2019-05-27 20:29:12  [ main:1177 ] - [ DEBUG ]  Executing request POST /v3/auth/tokens HTTP/1.1
+2019-05-27 20:29:12  [ main:1177 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 20:29:12  [ main:1177 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> POST /v3/auth/tokens HTTP/1.1
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> Content-Type: application/json
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> OS4J-Auth-Command: Tokens
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> Content-Length: 431
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> Host: 202.197.66.217:20003
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> "POST /v3/auth/tokens HTTP/1.1[\r][\n]"
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> "OS4J-Auth-Command: Tokens[\r][\n]"
+2019-05-27 20:29:12  [ main:1178 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Length: 431[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "Host: 202.197.66.217:20003[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "{[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "  "auth" : {[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "    "identity" : {[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "      "password" : {[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "        "user" : {[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "netvlab",[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "          "domain" : {[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "            "name" : "Default"[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "          },[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "          "password" : "openstack"[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "      },[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "      "methods" : [ "password" ][\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "    },[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "    "scope" : {[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "      "project" : {[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "        "name" : "netvlab",[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "        "domain" : {[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "Default"[\r][\n]"
+2019-05-27 20:29:12  [ main:1179 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 20:29:12  [ main:1180 ] - [ DEBUG ]  http-outgoing-0 >> "      }[\r][\n]"
+2019-05-27 20:29:12  [ main:1180 ] - [ DEBUG ]  http-outgoing-0 >> "    }[\r][\n]"
+2019-05-27 20:29:12  [ main:1180 ] - [ DEBUG ]  http-outgoing-0 >> "  }[\r][\n]"
+2019-05-27 20:29:12  [ main:1180 ] - [ DEBUG ]  http-outgoing-0 >> "}"
+2019-05-27 20:29:12  [ main:1550 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+2019-05-27 20:29:12  [ main:1551 ] - [ DEBUG ]  http-outgoing-0 << "Date: Mon, 27 May 2019 12:29:13 GMT[\r][\n]"
+2019-05-27 20:29:12  [ main:1551 ] - [ DEBUG ]  http-outgoing-0 << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2019-05-27 20:29:12  [ main:1551 ] - [ DEBUG ]  http-outgoing-0 << "X-Subject-Token: gAAAAABc69gaXBV0dhZYVw148lylaM3VObo84vAuxS4uRk6mmPC16fejNHn6j4kPAABnWtWMEUBdg_RkcZ45-ycjCYdtjQlMG947_LQJwIXKhfwBL5xSsL1K5gcA0fnEMF4fvM3GgA0gR8El1uBywNEpt2h1u94N0qTujuSH4eEXFUhXxfjeKQ0[\r][\n]"
+2019-05-27 20:29:12  [ main:1551 ] - [ DEBUG ]  http-outgoing-0 << "Vary: X-Auth-Token[\r][\n]"
+2019-05-27 20:29:12  [ main:1551 ] - [ DEBUG ]  http-outgoing-0 << "X-Distribution: Ubuntu[\r][\n]"
+2019-05-27 20:29:12  [ main:1551 ] - [ DEBUG ]  http-outgoing-0 << "x-openstack-request-id: req-daef0ca2-1d63-4f87-bd93-05881ddba95e[\r][\n]"
+2019-05-27 20:29:12  [ main:1551 ] - [ DEBUG ]  http-outgoing-0 << "Content-Length: 3313[\r][\n]"
+2019-05-27 20:29:12  [ main:1552 ] - [ DEBUG ]  http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2019-05-27 20:29:12  [ main:1552 ] - [ DEBUG ]  http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:29:12  [ main:1552 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-05-27 20:29:12  [ main:1552 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+2019-05-27 20:29:12  [ main:1552 ] - [ DEBUG ]  http-outgoing-0 << "{"token": {"is_domain": false, "methods": ["password"], "roles": [{"id": "6aa1758e98e54b1299dbaa85536f127c", "name": "user"}], "expires_at": "2019-05-27T13:29:14.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "85627a7c334549caa571bef2a5333889", "name": "netvlab"}, "catalog": [{"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20003/v3/", "region": "RegionOne", "interface": "public", "id": "2e2eac5ec9c947aa884d4399daa11119"}, {"region_id": "RegionOne", "url": "http://controller:5000/v3/", "region": "RegionOne", "interface": "internal", "id": "a5dd3354207d4e3689f12eb225dc041c"}, {"region_id": "RegionOne", "url": "http://controller:35357/v3/", "region": "RegionOne", "interface": "admin", "id": "e4a65284ee504c95b757a6f436b59553"}], "type": "identity", "id": "46605630a5694512a6420f92daac95c2", "name": "keystone"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "internal", "id": "4fd9b9bf479947bbb8732fafac0eaf61"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "admin", "id": "72e32928e4434b899f920853daa0ceba"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "public", "id": "a9b34ec867df463cbd8c280f6e481e89"}], "type": "placement", "id": "53f047b0c1cc4ba6932bd823354c7aaf", "name": "placement"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20006/v2.1", "region": "RegionOne", "interface": "public", "id": "9df5a8a9b6294d22a591eab5a197dcc9"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "admin", "id": "ab86af7afba443058662758e223d13db"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "internal", "id": "d8799c0c9cfc46d6a59c1d1d352f2040"}], "type": "compute", "id": "7837289623b146c3991bf7573dddbe79", "name": "nova"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20004", "region": "RegionOne", "interface": "public", "id": "44798afc1ecc41f7b5920b1ba31959c3"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "admin", "id": "62ab43fd15ed495ab16dae901bc240f2"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "internal", "id": "a73cd978300644649efea76ffb125116"}], "type": "network", "id": "a0033f2d8a434a7c9f2005f81e4ba74c", "name": "neutron"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "admin", "id": "3a9c6d1a8f2a4af9b077af5a211ed424"}, {"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "internal", "id": "afd5c9dd101d4ced8f3d775ea2172f25"}, {"region_id": "RegionOne", "url": "http://202.197.66.217:20005", "region": "RegionOne", "interface": "public", "id": "da42454c867e4e018348ad47c4bca094"}], "type": "image", "id": "c5a99868a7df4be1a54dd1aa4ec48255", "name": "glance"}], "user": {"password_expires_at": null, "domain": {"id": "default", "name": "Default"}, "id": "2e2cc1f903884607a31e0a07834c20d9", "name": "netvlab"}, "audit_ids": ["nXOsOvYOQWiITeX35mHn-A"], "issued_at": "2019-05-27T12:29:14.000000Z"}}"
+2019-05-27 20:29:12  [ main:1557 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 201 Created
+2019-05-27 20:29:12  [ main:1557 ] - [ DEBUG ]  http-outgoing-0 << Date: Mon, 27 May 2019 12:29:13 GMT
+2019-05-27 20:29:12  [ main:1557 ] - [ DEBUG ]  http-outgoing-0 << Server: Apache/2.4.18 (Ubuntu)
+2019-05-27 20:29:12  [ main:1557 ] - [ DEBUG ]  http-outgoing-0 << X-Subject-Token: gAAAAABc69gaXBV0dhZYVw148lylaM3VObo84vAuxS4uRk6mmPC16fejNHn6j4kPAABnWtWMEUBdg_RkcZ45-ycjCYdtjQlMG947_LQJwIXKhfwBL5xSsL1K5gcA0fnEMF4fvM3GgA0gR8El1uBywNEpt2h1u94N0qTujuSH4eEXFUhXxfjeKQ0
+2019-05-27 20:29:12  [ main:1557 ] - [ DEBUG ]  http-outgoing-0 << Vary: X-Auth-Token
+2019-05-27 20:29:12  [ main:1557 ] - [ DEBUG ]  http-outgoing-0 << X-Distribution: Ubuntu
+2019-05-27 20:29:12  [ main:1557 ] - [ DEBUG ]  http-outgoing-0 << x-openstack-request-id: req-daef0ca2-1d63-4f87-bd93-05881ddba95e
+2019-05-27 20:29:12  [ main:1558 ] - [ DEBUG ]  http-outgoing-0 << Content-Length: 3313
+2019-05-27 20:29:12  [ main:1558 ] - [ DEBUG ]  http-outgoing-0 << Keep-Alive: timeout=5, max=100
+2019-05-27 20:29:12  [ main:1558 ] - [ DEBUG ]  http-outgoing-0 << Connection: Keep-Alive
+2019-05-27 20:29:12  [ main:1558 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: application/json
+2019-05-27 20:29:12  [ main:1565 ] - [ DEBUG ]  Connection can be kept alive for 5000 MILLISECONDS
+2019-05-27 20:29:12  [ main:1569 ] - [ DEBUG ]  Connection [id: 0][route: {}->http://202.197.66.217:20003] can be kept alive for 5.0 seconds
+2019-05-27 20:29:12  [ main:1569 ] - [ DEBUG ]  Connection released: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:29:12  [ Finalizer:1649 ] - [ DEBUG ]  Connection manager is shutting down
+2019-05-27 20:29:12  [ Finalizer:1649 ] - [ DEBUG ]  http-outgoing-0: Close connection
+2019-05-27 20:29:12  [ Finalizer:1649 ] - [ DEBUG ]  Connection manager shut down
+2019-05-27 20:29:13  [ main:1714 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20004/v2.0 -> /routers/f6a09f61-978a-4b5e-af08-eb900cbeb1b7
+2019-05-27 20:29:13  [ main:1716 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 20:29:13  [ main:1716 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 20:29:13  [ main:1716 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 20:29:13  [ main:1716 ] - [ DEBUG ]  Connection leased: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:29:13  [ main:1716 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20004
+2019-05-27 20:29:13  [ main:1716 ] - [ DEBUG ]  Connecting to /202.197.66.217:20004
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  Connection established 192.168.1.160:8534<->202.197.66.217:20004
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  Executing request GET /v2.0/routers/f6a09f61-978a-4b5e-af08-eb900cbeb1b7 HTTP/1.1
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  http-outgoing-1 >> GET /v2.0/routers/f6a09f61-978a-4b5e-af08-eb900cbeb1b7 HTTP/1.1
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  http-outgoing-1 >> User-Agent: OpenStack4j / OpenStack Client
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  http-outgoing-1 >> X-Auth-Token: gAAAAABc69gaXBV0dhZYVw148lylaM3VObo84vAuxS4uRk6mmPC16fejNHn6j4kPAABnWtWMEUBdg_RkcZ45-ycjCYdtjQlMG947_LQJwIXKhfwBL5xSsL1K5gcA0fnEMF4fvM3GgA0gR8El1uBywNEpt2h1u94N0qTujuSH4eEXFUhXxfjeKQ0
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  http-outgoing-1 >> Host: 202.197.66.217:20004
+2019-05-27 20:29:13  [ main:1717 ] - [ DEBUG ]  http-outgoing-1 >> Connection: Keep-Alive
+2019-05-27 20:29:13  [ main:1718 ] - [ DEBUG ]  http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2019-05-27 20:29:13  [ main:1718 ] - [ DEBUG ]  http-outgoing-1 >> "GET /v2.0/routers/f6a09f61-978a-4b5e-af08-eb900cbeb1b7 HTTP/1.1[\r][\n]"
+2019-05-27 20:29:13  [ main:1718 ] - [ DEBUG ]  http-outgoing-1 >> "User-Agent: OpenStack4j / OpenStack Client[\r][\n]"
+2019-05-27 20:29:13  [ main:1718 ] - [ DEBUG ]  http-outgoing-1 >> "X-Auth-Token: gAAAAABc69gaXBV0dhZYVw148lylaM3VObo84vAuxS4uRk6mmPC16fejNHn6j4kPAABnWtWMEUBdg_RkcZ45-ycjCYdtjQlMG947_LQJwIXKhfwBL5xSsL1K5gcA0fnEMF4fvM3GgA0gR8El1uBywNEpt2h1u94N0qTujuSH4eEXFUhXxfjeKQ0[\r][\n]"
+2019-05-27 20:29:13  [ main:1718 ] - [ DEBUG ]  http-outgoing-1 >> "Host: 202.197.66.217:20004[\r][\n]"
+2019-05-27 20:29:13  [ main:1718 ] - [ DEBUG ]  http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:29:13  [ main:1718 ] - [ DEBUG ]  http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 20:29:13  [ main:1718 ] - [ DEBUG ]  http-outgoing-1 >> "[\r][\n]"
+2019-05-27 20:29:13  [ main:1905 ] - [ DEBUG ]  http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-27 20:29:13  [ main:1905 ] - [ DEBUG ]  http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-05-27 20:29:13  [ main:1905 ] - [ DEBUG ]  http-outgoing-1 << "Content-Length: 484[\r][\n]"
+2019-05-27 20:29:13  [ main:1905 ] - [ DEBUG ]  http-outgoing-1 << "X-Openstack-Request-Id: req-0794d98e-f537-4fd5-9f56-431a24718aaf[\r][\n]"
+2019-05-27 20:29:13  [ main:1906 ] - [ DEBUG ]  http-outgoing-1 << "Date: Mon, 27 May 2019 12:29:14 GMT[\r][\n]"
+2019-05-27 20:29:13  [ main:1906 ] - [ DEBUG ]  http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-05-27 20:29:13  [ main:1906 ] - [ DEBUG ]  http-outgoing-1 << "[\r][\n]"
+2019-05-27 20:29:13  [ main:1906 ] - [ DEBUG ]  http-outgoing-1 << "{"router": {"status": "ACTIVE", "external_gateway_info": null, "availability_zone_hints": [], "availability_zones": ["nova"], "description": "", "tags": [], "tenant_id": "85627a7c334549caa571bef2a5333889", "created_at": "2019-05-20T12:45:30Z", "admin_state_up": true, "updated_at": "2019-05-20T13:15:53Z", "flavor_id": null, "revision_number": 4, "routes": [], "project_id": "85627a7c334549caa571bef2a5333889", "id": "f6a09f61-978a-4b5e-af08-eb900cbeb1b7", "name": "routerforcentos"}}"
+2019-05-27 20:29:13  [ main:1906 ] - [ DEBUG ]  http-outgoing-1 << HTTP/1.1 200 OK
+2019-05-27 20:29:13  [ main:1906 ] - [ DEBUG ]  http-outgoing-1 << Content-Type: application/json
+2019-05-27 20:29:13  [ main:1906 ] - [ DEBUG ]  http-outgoing-1 << Content-Length: 484
+2019-05-27 20:29:13  [ main:1906 ] - [ DEBUG ]  http-outgoing-1 << X-Openstack-Request-Id: req-0794d98e-f537-4fd5-9f56-431a24718aaf
+2019-05-27 20:29:13  [ main:1907 ] - [ DEBUG ]  http-outgoing-1 << Date: Mon, 27 May 2019 12:29:14 GMT
+2019-05-27 20:29:13  [ main:1907 ] - [ DEBUG ]  http-outgoing-1 << Connection: keep-alive
+2019-05-27 20:29:13  [ main:1907 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2019-05-27 20:29:13  [ main:1908 ] - [ DEBUG ]  Connection [id: 1][route: {}->http://202.197.66.217:20004] can be kept alive indefinitely
+2019-05-27 20:29:13  [ main:1908 ] - [ DEBUG ]  Connection released: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:51:26  [ main:0 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20003/v3 -> /auth/tokens
+2019-05-27 20:51:27  [ main:1165 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 20:51:27  [ main:1175 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 20:51:27  [ main:1185 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 20:51:27  [ main:1185 ] - [ DEBUG ]  Connection leased: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20003
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  Connecting to /202.197.66.217:20003
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  Connection established 192.168.1.160:10805<->202.197.66.217:20003
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  Executing request POST /v3/auth/tokens HTTP/1.1
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> POST /v3/auth/tokens HTTP/1.1
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> Content-Type: application/json
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> OS4J-Auth-Command: Tokens
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> Content-Length: 431
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> Host: 202.197.66.217:20003
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "POST /v3/auth/tokens HTTP/1.1[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "OS4J-Auth-Command: Tokens[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Length: 431[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "Host: 202.197.66.217:20003[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "{[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "  "auth" : {[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "    "identity" : {[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "      "password" : {[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "        "user" : {[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "netvlab",[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "          "domain" : {[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "            "name" : "Default"[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "          },[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "          "password" : "openstack"[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "      },[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "      "methods" : [ "password" ][\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "    },[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "    "scope" : {[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "      "project" : {[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "        "name" : "netvlab",[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "        "domain" : {[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "Default"[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "      }[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "    }[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "  }[\r][\n]"
+2019-05-27 20:51:27  [ main:1195 ] - [ DEBUG ]  http-outgoing-0 >> "}"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "Date: Mon, 27 May 2019 12:51:29 GMT[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "X-Subject-Token: gAAAAABc691RoGRY9JyeCSkg5EQTS200WNFWbYXuWDsBFtwsYSZW9pTyK5th4wDyxZU_xHyakYG7WGRN6o4_qtyQ8WlNkjo7Rkr_3Daw6aMwOM6Q7Fs3sDsyQL7kylm3DPiHcZ9SzyLrtCS2OknAu-Iu0zhySoWZb8Ks6r2LC_HtHWl6fokBTp0[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "Vary: X-Auth-Token[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "X-Distribution: Ubuntu[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "x-openstack-request-id: req-35db6384-3c67-4f33-86dd-fdd037ca7ca1[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "Content-Length: 3313[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+2019-05-27 20:51:28  [ main:1535 ] - [ DEBUG ]  http-outgoing-0 << "{"token": {"is_domain": false, "methods": ["password"], "roles": [{"id": "6aa1758e98e54b1299dbaa85536f127c", "name": "user"}], "expires_at": "2019-05-27T13:51:29.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "85627a7c334549caa571bef2a5333889", "name": "netvlab"}, "catalog": [{"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20003/v3/", "region": "RegionOne", "interface": "public", "id": "2e2eac5ec9c947aa884d4399daa11119"}, {"region_id": "RegionOne", "url": "http://controller:5000/v3/", "region": "RegionOne", "interface": "internal", "id": "a5dd3354207d4e3689f12eb225dc041c"}, {"region_id": "RegionOne", "url": "http://controller:35357/v3/", "region": "RegionOne", "interface": "admin", "id": "e4a65284ee504c95b757a6f436b59553"}], "type": "identity", "id": "46605630a5694512a6420f92daac95c2", "name": "keystone"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "internal", "id": "4fd9b9bf479947bbb8732fafac0eaf61"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "admin", "id": "72e32928e4434b899f920853daa0ceba"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "public", "id": "a9b34ec867df463cbd8c280f6e481e89"}], "type": "placement", "id": "53f047b0c1cc4ba6932bd823354c7aaf", "name": "placement"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20006/v2.1", "region": "RegionOne", "interface": "public", "id": "9df5a8a9b6294d22a591eab5a197dcc9"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "admin", "id": "ab86af7afba443058662758e223d13db"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "internal", "id": "d8799c0c9cfc46d6a59c1d1d352f2040"}], "type": "compute", "id": "7837289623b146c3991bf7573dddbe79", "name": "nova"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20004", "region": "RegionOne", "interface": "public", "id": "44798afc1ecc41f7b5920b1ba31959c3"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "admin", "id": "62ab43fd15ed495ab16dae901bc240f2"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "internal", "id": "a73cd978300644649efea76ffb125116"}], "type": "network", "id": "a0033f2d8a434a7c9f2005f81e4ba74c", "name": "neutron"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "admin", "id": "3a9c6d1a8f2a4af9b077af5a211ed424"}, {"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "internal", "id": "afd5c9dd101d4ced8f3d775ea2172f25"}, {"region_id": "RegionOne", "url": "http://202.197.66.217:20005", "region": "RegionOne", "interface": "public", "id": "da42454c867e4e018348ad47c4bca094"}], "type": "image", "id": "c5a99868a7df4be1a54dd1aa4ec48255", "name": "glance"}], "user": {"password_expires_at": null, "domain": {"id": "default", "name": "Default"}, "id": "2e2cc1f903884607a31e0a07834c20d9", "name": "netvlab"}, "audit_ids": ["_DhSo_ADQu23S3LkFHtVgw"], "issued_at": "2019-05-27T12:51:29.000000Z"}}"
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 201 Created
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << Date: Mon, 27 May 2019 12:51:29 GMT
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << Server: Apache/2.4.18 (Ubuntu)
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << X-Subject-Token: gAAAAABc691RoGRY9JyeCSkg5EQTS200WNFWbYXuWDsBFtwsYSZW9pTyK5th4wDyxZU_xHyakYG7WGRN6o4_qtyQ8WlNkjo7Rkr_3Daw6aMwOM6Q7Fs3sDsyQL7kylm3DPiHcZ9SzyLrtCS2OknAu-Iu0zhySoWZb8Ks6r2LC_HtHWl6fokBTp0
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << Vary: X-Auth-Token
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << X-Distribution: Ubuntu
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << x-openstack-request-id: req-35db6384-3c67-4f33-86dd-fdd037ca7ca1
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << Content-Length: 3313
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << Keep-Alive: timeout=5, max=100
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << Connection: Keep-Alive
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: application/json
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  Connection can be kept alive for 5000 MILLISECONDS
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  Connection [id: 0][route: {}->http://202.197.66.217:20003] can be kept alive for 5.0 seconds
+2019-05-27 20:51:28  [ main:1545 ] - [ DEBUG ]  Connection released: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:51:28  [ Finalizer:1625 ] - [ DEBUG ]  Connection manager is shutting down
+2019-05-27 20:51:28  [ Finalizer:1625 ] - [ DEBUG ]  http-outgoing-0: Close connection
+2019-05-27 20:51:28  [ Finalizer:1625 ] - [ DEBUG ]  Connection manager shut down
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20004/v2.0 -> /routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Connection leased: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20004
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Connecting to /202.197.66.217:20004
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Connection established 192.168.1.160:10807<->202.197.66.217:20004
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Executing request GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> User-Agent: OpenStack4j / OpenStack Client
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> X-Auth-Token: gAAAAABc691RoGRY9JyeCSkg5EQTS200WNFWbYXuWDsBFtwsYSZW9pTyK5th4wDyxZU_xHyakYG7WGRN6o4_qtyQ8WlNkjo7Rkr_3Daw6aMwOM6Q7Fs3sDsyQL7kylm3DPiHcZ9SzyLrtCS2OknAu-Iu0zhySoWZb8Ks6r2LC_HtHWl6fokBTp0
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> Host: 202.197.66.217:20004
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> Connection: Keep-Alive
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> "GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1[\r][\n]"
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> "User-Agent: OpenStack4j / OpenStack Client[\r][\n]"
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> "X-Auth-Token: gAAAAABc691RoGRY9JyeCSkg5EQTS200WNFWbYXuWDsBFtwsYSZW9pTyK5th4wDyxZU_xHyakYG7WGRN6o4_qtyQ8WlNkjo7Rkr_3Daw6aMwOM6Q7Fs3sDsyQL7kylm3DPiHcZ9SzyLrtCS2OknAu-Iu0zhySoWZb8Ks6r2LC_HtHWl6fokBTp0[\r][\n]"
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> "Host: 202.197.66.217:20004[\r][\n]"
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 20:51:28  [ main:1695 ] - [ DEBUG ]  http-outgoing-1 >> "[\r][\n]"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << "Content-Length: 657[\r][\n]"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << "X-Openstack-Request-Id: req-3f59bcba-d139-4c2f-b9c6-7dd6bd6cd451[\r][\n]"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << "Date: Mon, 27 May 2019 12:51:29 GMT[\r][\n]"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << "[\r][\n]"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << "{"router": {"status": "ACTIVE", "external_gateway_info": {"network_id": "1db6202d-a879-4050-9583-b3a8d3b9bcf4", "enable_snat": true, "external_fixed_ips": [{"subnet_id": "1cfce092-5ee7-4a84-a48c-a0e7c037eb18", "ip_address": "192.168.1.232"}]}, "availability_zone_hints": [], "availability_zones": ["nova"], "description": "", "tags": [], "tenant_id": "85627a7c334549caa571bef2a5333889", "created_at": "2019-05-20T12:33:19Z", "admin_state_up": true, "updated_at": "2019-05-27T12:51:15Z", "flavor_id": null, "revision_number": 11, "routes": [], "project_id": "85627a7c334549caa571bef2a5333889", "id": "34d62506-7122-42d6-ac1b-c1ea7e02b9e6", "name": "ROUTER"}}"
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << HTTP/1.1 200 OK
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << Content-Type: application/json
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << Content-Length: 657
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << X-Openstack-Request-Id: req-3f59bcba-d139-4c2f-b9c6-7dd6bd6cd451
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << Date: Mon, 27 May 2019 12:51:29 GMT
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  http-outgoing-1 << Connection: keep-alive
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  Connection [id: 1][route: {}->http://202.197.66.217:20004] can be kept alive indefinitely
+2019-05-27 20:51:28  [ main:1925 ] - [ DEBUG ]  Connection released: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 21:05:54  [ main:0 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20003/v3 -> /auth/tokens
+2019-05-27 21:05:55  [ main:1258 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 21:05:55  [ main:1274 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 21:05:55  [ main:1276 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 21:05:55  [ main:1286 ] - [ DEBUG ]  Connection leased: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 21:05:55  [ main:1287 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20003
+2019-05-27 21:05:55  [ main:1288 ] - [ DEBUG ]  Connecting to /202.197.66.217:20003
+2019-05-27 21:05:55  [ main:1289 ] - [ DEBUG ]  Connection established 192.168.1.160:12301<->202.197.66.217:20003
+2019-05-27 21:05:55  [ main:1289 ] - [ DEBUG ]  Executing request POST /v3/auth/tokens HTTP/1.1
+2019-05-27 21:05:55  [ main:1289 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 21:05:55  [ main:1289 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 21:05:55  [ main:1290 ] - [ DEBUG ]  http-outgoing-0 >> POST /v3/auth/tokens HTTP/1.1
+2019-05-27 21:05:55  [ main:1290 ] - [ DEBUG ]  http-outgoing-0 >> Content-Type: application/json
+2019-05-27 21:05:55  [ main:1290 ] - [ DEBUG ]  http-outgoing-0 >> OS4J-Auth-Command: Tokens
+2019-05-27 21:05:55  [ main:1290 ] - [ DEBUG ]  http-outgoing-0 >> Content-Length: 431
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> Host: 202.197.66.217:20003
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> Connection: Keep-Alive
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "POST /v3/auth/tokens HTTP/1.1[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "OS4J-Auth-Command: Tokens[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "Content-Length: 431[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "Host: 202.197.66.217:20003[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "{[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "  "auth" : {[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "    "identity" : {[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "      "password" : {[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "        "user" : {[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "netvlab",[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "          "domain" : {[\r][\n]"
+2019-05-27 21:05:55  [ main:1291 ] - [ DEBUG ]  http-outgoing-0 >> "            "name" : "Default"[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "          },[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "          "password" : "openstack"[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "      },[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "      "methods" : [ "password" ][\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "    },[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "    "scope" : {[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "      "project" : {[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "        "name" : "netvlab",[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "        "domain" : {[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "          "name" : "Default"[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "        }[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "      }[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "    }[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "  }[\r][\n]"
+2019-05-27 21:05:55  [ main:1292 ] - [ DEBUG ]  http-outgoing-0 >> "}"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "HTTP/1.1 201 Created[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "Date: Mon, 27 May 2019 13:05:56 GMT[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "Server: Apache/2.4.18 (Ubuntu)[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "X-Subject-Token: gAAAAABc6-C1YzSGvG2-mpKINYCetqCKtBlC-EZihRAKamy-Z3LYlwqZp-4wFX0FZ5kA8zSRvieiYnc5g9m6HVJCjiaWmkdpBKhAfFzH6h3-vA2NnIQoUYH1JW0My8ty2yvJD3vf8z3Y2q0QKmPvR1O8uZJ1O0SvhCxBRHr2Cwg9E_uu3ONG_c8[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "Vary: X-Auth-Token[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "X-Distribution: Ubuntu[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "x-openstack-request-id: req-dc1fce78-312d-4afd-8662-3b971811801e[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "Content-Length: 3313[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "Keep-Alive: timeout=5, max=100[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "Connection: Keep-Alive[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-05-27 21:05:55  [ main:1665 ] - [ DEBUG ]  http-outgoing-0 << "[\r][\n]"
+2019-05-27 21:05:55  [ main:1666 ] - [ DEBUG ]  http-outgoing-0 << "{"token": {"is_domain": false, "methods": ["password"], "roles": [{"id": "6aa1758e98e54b1299dbaa85536f127c", "name": "user"}], "expires_at": "2019-05-27T14:05:57.000000Z", "project": {"domain": {"id": "default", "name": "Default"}, "id": "85627a7c334549caa571bef2a5333889", "name": "netvlab"}, "catalog": [{"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20003/v3/", "region": "RegionOne", "interface": "public", "id": "2e2eac5ec9c947aa884d4399daa11119"}, {"region_id": "RegionOne", "url": "http://controller:5000/v3/", "region": "RegionOne", "interface": "internal", "id": "a5dd3354207d4e3689f12eb225dc041c"}, {"region_id": "RegionOne", "url": "http://controller:35357/v3/", "region": "RegionOne", "interface": "admin", "id": "e4a65284ee504c95b757a6f436b59553"}], "type": "identity", "id": "46605630a5694512a6420f92daac95c2", "name": "keystone"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "internal", "id": "4fd9b9bf479947bbb8732fafac0eaf61"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "admin", "id": "72e32928e4434b899f920853daa0ceba"}, {"region_id": "RegionOne", "url": "http://controller:8778", "region": "RegionOne", "interface": "public", "id": "a9b34ec867df463cbd8c280f6e481e89"}], "type": "placement", "id": "53f047b0c1cc4ba6932bd823354c7aaf", "name": "placement"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20006/v2.1", "region": "RegionOne", "interface": "public", "id": "9df5a8a9b6294d22a591eab5a197dcc9"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "admin", "id": "ab86af7afba443058662758e223d13db"}, {"region_id": "RegionOne", "url": "http://controller:8774/v2.1", "region": "RegionOne", "interface": "internal", "id": "d8799c0c9cfc46d6a59c1d1d352f2040"}], "type": "compute", "id": "7837289623b146c3991bf7573dddbe79", "name": "nova"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://202.197.66.217:20004", "region": "RegionOne", "interface": "public", "id": "44798afc1ecc41f7b5920b1ba31959c3"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "admin", "id": "62ab43fd15ed495ab16dae901bc240f2"}, {"region_id": "RegionOne", "url": "http://controller:9696", "region": "RegionOne", "interface": "internal", "id": "a73cd978300644649efea76ffb125116"}], "type": "network", "id": "a0033f2d8a434a7c9f2005f81e4ba74c", "name": "neutron"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "admin", "id": "3a9c6d1a8f2a4af9b077af5a211ed424"}, {"region_id": "RegionOne", "url": "http://controller:9292", "region": "RegionOne", "interface": "internal", "id": "afd5c9dd101d4ced8f3d775ea2172f25"}, {"region_id": "RegionOne", "url": "http://202.197.66.217:20005", "region": "RegionOne", "interface": "public", "id": "da42454c867e4e018348ad47c4bca094"}], "type": "image", "id": "c5a99868a7df4be1a54dd1aa4ec48255", "name": "glance"}], "user": {"password_expires_at": null, "domain": {"id": "default", "name": "Default"}, "id": "2e2cc1f903884607a31e0a07834c20d9", "name": "netvlab"}, "audit_ids": ["TpimbnnaTaCAz6lUJECMpQ"], "issued_at": "2019-05-27T13:05:57.000000Z"}}"
+2019-05-27 21:05:55  [ main:1667 ] - [ DEBUG ]  http-outgoing-0 << HTTP/1.1 201 Created
+2019-05-27 21:05:55  [ main:1667 ] - [ DEBUG ]  http-outgoing-0 << Date: Mon, 27 May 2019 13:05:56 GMT
+2019-05-27 21:05:55  [ main:1667 ] - [ DEBUG ]  http-outgoing-0 << Server: Apache/2.4.18 (Ubuntu)
+2019-05-27 21:05:55  [ main:1668 ] - [ DEBUG ]  http-outgoing-0 << X-Subject-Token: gAAAAABc6-C1YzSGvG2-mpKINYCetqCKtBlC-EZihRAKamy-Z3LYlwqZp-4wFX0FZ5kA8zSRvieiYnc5g9m6HVJCjiaWmkdpBKhAfFzH6h3-vA2NnIQoUYH1JW0My8ty2yvJD3vf8z3Y2q0QKmPvR1O8uZJ1O0SvhCxBRHr2Cwg9E_uu3ONG_c8
+2019-05-27 21:05:55  [ main:1668 ] - [ DEBUG ]  http-outgoing-0 << Vary: X-Auth-Token
+2019-05-27 21:05:55  [ main:1668 ] - [ DEBUG ]  http-outgoing-0 << X-Distribution: Ubuntu
+2019-05-27 21:05:55  [ main:1668 ] - [ DEBUG ]  http-outgoing-0 << x-openstack-request-id: req-dc1fce78-312d-4afd-8662-3b971811801e
+2019-05-27 21:05:55  [ main:1668 ] - [ DEBUG ]  http-outgoing-0 << Content-Length: 3313
+2019-05-27 21:05:55  [ main:1668 ] - [ DEBUG ]  http-outgoing-0 << Keep-Alive: timeout=5, max=100
+2019-05-27 21:05:55  [ main:1668 ] - [ DEBUG ]  http-outgoing-0 << Connection: Keep-Alive
+2019-05-27 21:05:55  [ main:1668 ] - [ DEBUG ]  http-outgoing-0 << Content-Type: application/json
+2019-05-27 21:05:55  [ main:1671 ] - [ DEBUG ]  Connection can be kept alive for 5000 MILLISECONDS
+2019-05-27 21:05:55  [ main:1676 ] - [ DEBUG ]  Connection [id: 0][route: {}->http://202.197.66.217:20003] can be kept alive for 5.0 seconds
+2019-05-27 21:05:55  [ main:1676 ] - [ DEBUG ]  Connection released: [id: 0][route: {}->http://202.197.66.217:20003][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 21:05:55  [ Finalizer:1758 ] - [ DEBUG ]  Connection manager is shutting down
+2019-05-27 21:05:55  [ Finalizer:1758 ] - [ DEBUG ]  http-outgoing-0: Close connection
+2019-05-27 21:05:55  [ Finalizer:1758 ] - [ DEBUG ]  Connection manager shut down
+2019-05-27 21:05:55  [ main:1821 ] - [ DEBUG ]  Executing Request: http://202.197.66.217:20004/v2.0 -> /routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6
+2019-05-27 21:05:55  [ main:1823 ] - [ DEBUG ]  CookieSpec selected: default
+2019-05-27 21:05:55  [ main:1824 ] - [ DEBUG ]  Auth cache not set in the context
+2019-05-27 21:05:55  [ main:1824 ] - [ DEBUG ]  Connection request: [route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2019-05-27 21:05:55  [ main:1824 ] - [ DEBUG ]  Connection leased: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2019-05-27 21:05:55  [ main:1824 ] - [ DEBUG ]  Opening connection {}->http://202.197.66.217:20004
+2019-05-27 21:05:55  [ main:1824 ] - [ DEBUG ]  Connecting to /202.197.66.217:20004
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  Connection established 192.168.1.160:12303<->202.197.66.217:20004
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  Executing request GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  Target auth state: UNCHALLENGED
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  Proxy auth state: UNCHALLENGED
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> User-Agent: OpenStack4j / OpenStack Client
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> X-Auth-Token: gAAAAABc6-C1YzSGvG2-mpKINYCetqCKtBlC-EZihRAKamy-Z3LYlwqZp-4wFX0FZ5kA8zSRvieiYnc5g9m6HVJCjiaWmkdpBKhAfFzH6h3-vA2NnIQoUYH1JW0My8ty2yvJD3vf8z3Y2q0QKmPvR1O8uZJ1O0SvhCxBRHr2Cwg9E_uu3ONG_c8
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> Host: 202.197.66.217:20004
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> Connection: Keep-Alive
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> Accept-Encoding: gzip,deflate
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> "GET /v2.0/routers/34d62506-7122-42d6-ac1b-c1ea7e02b9e6 HTTP/1.1[\r][\n]"
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> "User-Agent: OpenStack4j / OpenStack Client[\r][\n]"
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> "X-Auth-Token: gAAAAABc6-C1YzSGvG2-mpKINYCetqCKtBlC-EZihRAKamy-Z3LYlwqZp-4wFX0FZ5kA8zSRvieiYnc5g9m6HVJCjiaWmkdpBKhAfFzH6h3-vA2NnIQoUYH1JW0My8ty2yvJD3vf8z3Y2q0QKmPvR1O8uZJ1O0SvhCxBRHr2Cwg9E_uu3ONG_c8[\r][\n]"
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> "Host: 202.197.66.217:20004[\r][\n]"
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-05-27 21:05:55  [ main:1825 ] - [ DEBUG ]  http-outgoing-1 >> "[\r][\n]"
+2019-05-27 21:05:56  [ main:2402 ] - [ DEBUG ]  http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << "Content-Length: 657[\r][\n]"
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << "X-Openstack-Request-Id: req-96ef09a4-a079-471b-b308-45572176505e[\r][\n]"
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << "Date: Mon, 27 May 2019 13:05:58 GMT[\r][\n]"
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << "[\r][\n]"
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << "{"router": {"status": "ACTIVE", "external_gateway_info": {"network_id": "1db6202d-a879-4050-9583-b3a8d3b9bcf4", "enable_snat": true, "external_fixed_ips": [{"subnet_id": "1cfce092-5ee7-4a84-a48c-a0e7c037eb18", "ip_address": "192.168.1.232"}]}, "availability_zone_hints": [], "availability_zones": ["nova"], "description": "", "tags": [], "tenant_id": "85627a7c334549caa571bef2a5333889", "created_at": "2019-05-20T12:33:19Z", "admin_state_up": true, "updated_at": "2019-05-27T12:51:15Z", "flavor_id": null, "revision_number": 11, "routes": [], "project_id": "85627a7c334549caa571bef2a5333889", "id": "34d62506-7122-42d6-ac1b-c1ea7e02b9e6", "name": "ROUTER"}}"
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << HTTP/1.1 200 OK
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << Content-Type: application/json
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << Content-Length: 657
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << X-Openstack-Request-Id: req-96ef09a4-a079-471b-b308-45572176505e
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << Date: Mon, 27 May 2019 13:05:58 GMT
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  http-outgoing-1 << Connection: keep-alive
+2019-05-27 21:05:56  [ main:2403 ] - [ DEBUG ]  Connection can be kept alive indefinitely
+2019-05-27 21:05:56  [ main:2404 ] - [ DEBUG ]  Connection [id: 1][route: {}->http://202.197.66.217:20004] can be kept alive indefinitely
+2019-05-27 21:05:56  [ main:2404 ] - [ DEBUG ]  Connection released: [id: 1][route: {}->http://202.197.66.217:20004][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]

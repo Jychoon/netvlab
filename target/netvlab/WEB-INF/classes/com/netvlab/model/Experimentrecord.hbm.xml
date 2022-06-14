@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.netvlab.model.Experimentrecord" table="experimentrecord" schema="vnetwork">
+        <id name="id" column="ID"/>
+        <property name="userName" column="UserName"/>
+        <property name="experimentName" column="ExperimentName"/>
+        <property name="occupySource" column="OccupySource"/>
+        <property name="submitTime" column="SubmitTime"/>
+        <property name="releaseTime" column="ReleaseTime"/>
+        <property name="totalTime" column="TotalTime"/>
+    </class>
+</hibernate-mapping>

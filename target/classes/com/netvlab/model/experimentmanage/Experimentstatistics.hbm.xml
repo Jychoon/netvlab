@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.netvlab.model.experimentmanage.Experimentstatistics" table="experimentstatistics"
+           schema="vnetwork">
+        <id name="id" column="ID"/>
+        <property name="userName" column="UserName"/>
+        <property name="configureHttpServer" column="ConfigureHttpServer"/>
+        <property name="ethernetFrame" column="EthernetFrame"/>
+        <property name="arp" column="ARP"/>
+        <property name="iPandIcmp" column="IPandICMP"/>
+        <property name="routingTableLearning" column="RoutingTableLearning"/>
+        <property name="rip" column="RIP"/>
+        <property name="ospf" column="OSPF"/>
+        <property name="tcp" column="TCP"/>
+        <property name="http" column="HTTP"/>
+        <property name="ftp" column="FTP"/>
+        <property name="dns" column="DNS"/>
+        <property name="smtp" column="SMTP"/>
+    </class>
+</hibernate-mapping>
